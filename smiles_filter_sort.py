@@ -35,7 +35,7 @@ with open ("File4.csv", mode = 'a') as g:
                 g.write('\n')
 
 df4 = pd.read_csv('File4.csv')
-df5 = df4.sort_values('pyrethroid', ascending=False)
+df5 = df4.sort_values('drug', ascending=False)
 df5.index = np.arrange(1,len(df) + 1)
 
 df5.to_csv('File4_sorted.csv')
